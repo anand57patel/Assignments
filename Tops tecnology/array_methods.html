@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //array:collection of multiple data types. can store one or more values in single variable
+    let arr =["apple",45,23.3,true]
+    //console.log(arr);
+
+    //length
+    console.log(arr.length);
+    console.log(arr[1]);
+    console.log(arr.length-1);
+
+    //for each
+    arr.foreach(function(index,i){
+        console.log(i+"=>index");
+    });
+
+    //push
+    let a =arr.push("orange")
+    console.log(arr);
+
+    //pop
+    console.log(arr.pop());
+    console.log(arr);
+
+    //unshift
+    arr.unshift("kiwi")
+    console.log(arr);
+
+    //indexof
+    var o=arr.indexOf(true)
+    console.log(o);
+
+    //splice
+    arr.splice(2)
+    console.log(arr);
+    let m =["apple","orange","kiwi","banana","cherry"]
+    m.splice(2,1)
+    console.log(m);
+
+    //slice
+    arr.slice();
+    console.log(arr);
+
+    //array constructor
+    let y = new Array("php","java","python")
+    console.log(y);
+
+    console.log(Array.from("Demo"));
+</script>

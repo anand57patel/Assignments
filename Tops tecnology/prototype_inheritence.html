@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     function Func1(fname,lname,age)
+    {
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+    }
+
+    //const Data= new Func1("john","doe",25)
+
+    function Func2(fname,lname,age,schoolName)
+    {
+        Func1.call(this,fname,lname,age);
+        this.schoolName = schoolName
+    }
+
+    Var Data = new Func2("john","doe",15,"tops tech");
+    console.log(Data);
+    console.log(Data.schoolName);
+</script>
